@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">DESCRIPTION</th>
+    </tr>
+    </thead>
+    <tbody>
+       
+            <tr>
+                <th scope="row">123123</th>
+                <td>fdfsdf</td>
+                <td>sdfsdfsd</td>
+                <td>
+                    <button type="submit" class="btn btn-danger">Update</button>
+                    <button type="submit" class="btn btn-warning">Delete</button>
+                </td>
+            </tr>
+            <% clients.forEach((clients) => { %>
+                <tr>
+                    <th scope="row"><%= clients.id %></th>
+                    <td><%= clients.name %></td>
+                    <td><%= clients.description %></td>
+                    <td>
+                    <button type="submit" class="btn btn-danger">Update</button>
+                    <button type="submit" class="btn btn-warning">Delete</button>
+                    </td>
+                </tr>
+            <% }) %>
+    </tbody>
+</table>
